@@ -7,7 +7,7 @@ authors:
 environment:
   sdk: ">=1.24.2"
 dependencies:
-  bootstrap: "4.0.0-alpha.6"
+  bootstrap: ^4.0.0
   over_react: ^1.20.0
 dev_dependencies:
   coverage: ^0.7.2
@@ -18,7 +18,7 @@ dev_dependencies:
 transformers:
   - bootstrap:
       url: //maxcdn.bootstrapcdn.com/bootstrap/{{version}}
-      version: 4.0.0-beta.3
+      version: 4.0.0
   - over_react:
       # Apply workaround for https://github.com/dart-lang/sdk/issues/29914
       fixDdcAbstractAccessors: true
@@ -26,8 +26,8 @@ transformers:
       $include: test/**_test{.*,}.dart
 
 dependency_overrides:
-  # Workaround until latest master is released to pub (https://github.com/richerlariviere/bootstrap_for_pub/issues/28)
+  # Workaround until 4.0.0 is released to pub (https://github.com/richerlariviere/bootstrap_for_pub/pull/30)
   bootstrap:
     git:
       url: git@github.com:alademann/bootstrap_for_pub.git
-      ref: 4587fd81dfbf8863a9ea2f532e34d2e0c1bef4db # from bs_4.0.0-beta.3
+      ref: bs_4.0.0
