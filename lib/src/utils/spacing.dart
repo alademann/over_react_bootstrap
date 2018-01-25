@@ -367,7 +367,7 @@ String bsPaddingHorizontal(BsSpacingSize size, [BsMediaQueryWidthBreakpoint brea
 ///
 /// > Related: [bsPaddingVertical]
 String bsMarginVertical(BsSpacingSize size, [BsMediaQueryWidthBreakpoint breakpoint]) =>
-    new _BsMarginUtil.horizontal(size, breakpoint).className;
+    new _BsMarginUtil.vertical(size, breakpoint).className;
 
 /// Returns the [Bootstrap CSS spacing utility class](https://getbootstrap.com/docs/4.0/utilities/spacing/)
 /// that sets a `padding-top` and `padding-bottom` value based on the provided [size] and optionally, the provided [breakpoint].
@@ -386,7 +386,7 @@ String bsMarginVertical(BsSpacingSize size, [BsMediaQueryWidthBreakpoint breakpo
 ///
 /// > Related: [bsMarginVertical]
 String bsPaddingVertical(BsSpacingSize size, [BsMediaQueryWidthBreakpoint breakpoint]) =>
-    new _BsPaddingUtil.horizontal(size, breakpoint).className;
+    new _BsPaddingUtil.vertical(size, breakpoint).className;
 
 /// Returns the [Bootstrap CSS spacing utility class](https://getbootstrap.com/docs/4.0/utilities/spacing/)
 /// that sets a `margin` value based on the provided [size] and optionally, the provided [breakpoint].
@@ -547,7 +547,7 @@ class _BsMarginUtil extends _BsSpacingUtil {
 
 class _BsPaddingUtil extends _BsSpacingUtil {
   _BsPaddingUtil(_BsSpacingSide side, BsSpacingSize size, [BsMediaQueryWidthBreakpoint breakpoint])
-      : super(_BsSpacingProperty.MARGIN, side, size, breakpoint);
+      : super(_BsSpacingProperty.PADDING, side, size, breakpoint);
 
   factory _BsPaddingUtil.top(BsSpacingSize size, [BsMediaQueryWidthBreakpoint breakpoint]) =>
       new _BsPaddingUtil(_BsSpacingSide.T, size, breakpoint);
