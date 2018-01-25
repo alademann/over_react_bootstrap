@@ -76,7 +76,9 @@ class ToggleButtonGroupComponent extends ButtonGroupComponent<ToggleButtonGroupP
   @override
   ClassNameBuilder getButtonGroupClasses() {
     return super.getButtonGroupClasses()
-      ..add('btn-group-toggle');
+      ..add('btn-group-toggle')
+      ..add('btn-toolbar', props.skin == ButtonSkin.LINK)
+      ..blacklist('btn-group', props.skin == ButtonSkin.LINK);
   }
 
   /// The handler for when one of the children of the [ToggleButtonGroup] is changed or unchecked

@@ -167,6 +167,11 @@ class ToggleButtonComponent extends ButtonComponent<ToggleButtonProps, ToggleBut
     return builder();
   }
 
+  @override
+  ClassNameBuilder getButtonClasses() => super.getButtonClasses()
+    ..blacklist(ButtonSkin.LINK.className, props.skin == ButtonSkin.LINK && state.isChecked)
+    ..add(ButtonSkin.PRIMARY.className, props.skin == ButtonSkin.LINK && state.isChecked);
+
   /// Checks the `<input>` element to ensure that [ToggleButtonState.isChecked]
   /// matches the value of the [InputElement.checked] attribute.
   ///
