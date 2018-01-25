@@ -1,11 +1,13 @@
 library over_react_bootstrap.components;
 
+import 'dart:async';
 import 'dart:html';
 import 'dart:math';
 import 'package:over_react/over_react.dart';
 import 'package:over_react_bootstrap/over_react_bootstrap.dart';
 
 part 'package:over_react_bootstrap/src/components/shared/action_item.dart';
+part 'package:over_react_bootstrap/src/components/shared/collapsible.dart';
 part 'package:over_react_bootstrap/src/components/shared.dart';
 part 'package:over_react_bootstrap/src/components/button.dart';
 part 'package:over_react_bootstrap/src/components/button_group.dart';
