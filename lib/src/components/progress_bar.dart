@@ -5,10 +5,10 @@ part of over_react_bootstrap.components;
 ///
 /// > See: <https://getbootstrap.com/docs/4.0/components/progress/>
 @Factory()
-UiFactory<ProgressBarProps> ProgressBar;
+UiFactory<ProgressBarProps> ProgressBar = _$ProgressBar;
 
 @Props()
-class ProgressBarProps extends UiProps {
+class _$ProgressBarProps extends UiProps {
   /// Sets a CSS `height` value on the root `.progress` node.
   ///
   /// The `.progress-bar` element's height will automatically grow / shrink to the height of the parent.

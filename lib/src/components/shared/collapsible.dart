@@ -2,10 +2,10 @@ part of over_react_bootstrap.components;
 
 /// A higher-order component that can be wrapped around another component to make it expand / collapse
 @Factory()
-UiFactory<CollapsibleProps> Collapsible;
+UiFactory<CollapsibleProps> Collapsible = _$Collapsible;
 
 @Props()
-class CollapsibleProps extends UiProps {
+class _$CollapsibleProps extends UiProps {
   /// Determines if the [CollapsibleComponent] is expanded.
   ///
   /// The component will transition in response to the value of this prop.
@@ -35,7 +35,7 @@ class CollapsibleProps extends UiProps {
 
 
 @State()
-class CollapsibleState extends UiState {
+class _$CollapsibleState extends UiState {
   /// The value of the dimension, the component is transitioning in either height or width,
   /// that the [CollapsibleComponent] is set to.
   ///

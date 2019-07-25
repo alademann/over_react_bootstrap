@@ -5,10 +5,10 @@ part of over_react_bootstrap.components;
 ///
 /// > See: <https://getbootstrap.com/docs/4.0/components/buttons/>
 @Factory()
-UiFactory<ButtonProps> Button;
+UiFactory<ButtonProps> Button = _$Button;
 
 @Props()
-class ButtonProps extends UiProps with ActionItemProps, BsSpacingProps {
+class _$ButtonProps extends UiProps with ActionItemProps, BsSpacingProps {
   /// The skin / "context" for the [Button].
   ///
   /// > See: <https://getbootstrap.com/docs/4.0/components/buttons/#examples>.
@@ -30,7 +30,7 @@ class ButtonProps extends UiProps with ActionItemProps, BsSpacingProps {
 }
 
 @State()
-class ButtonState extends UiState {}
+class _$ButtonState extends UiState {}
 
 @Component()
 class ButtonComponent<T extends ButtonProps, S extends ButtonState>

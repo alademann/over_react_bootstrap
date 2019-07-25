@@ -5,10 +5,10 @@ part of over_react_bootstrap.components;
 ///
 /// > See: <https://getbootstrap.com/docs/4.0/components/badge/>
 @Factory()
-UiFactory<BadgeProps> Badge;
+UiFactory<BadgeProps> Badge = _$Badge;
 
 @Props()
-class BadgeProps extends UiProps with ActionItemProps {
+class _$BadgeProps extends UiProps with ActionItemProps {
   /// The skin / "context" for the [Badge].
   ///
   /// __Required.__

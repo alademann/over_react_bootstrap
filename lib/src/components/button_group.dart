@@ -4,10 +4,10 @@ part of over_react_bootstrap.components;
 ///
 /// > See: <https://getbootstrap.com/docs/4.0/components/button-group/>.
 @Factory()
-UiFactory<ButtonGroupProps> ButtonGroup;
+UiFactory<ButtonGroupProps> ButtonGroup = _$ButtonGroup;
 
 @Props()
-class ButtonGroupProps extends UiProps {
+class _$ButtonGroupProps extends UiProps {
   /// Apply a button size variation universally to every [Button] within the [ButtonGroup].
   ///
   /// > See: <https://getbootstrap.com/docs/4.0/components/button-group/#sizing>.
@@ -27,7 +27,7 @@ class ButtonGroupProps extends UiProps {
 }
 
 @State()
-class ButtonGroupState extends UiState {}
+class _$ButtonGroupState extends UiState {}
 
 @Component()
 class ButtonGroupComponent<T extends ButtonGroupProps, S extends ButtonGroupState>

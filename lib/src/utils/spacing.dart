@@ -12,7 +12,7 @@ part of over_react_bootstrap.utils;
 /// The component class that utilizes the props class that this gets mixed into should mix in the
 /// [BsSpacingUtils] class.
 @PropsMixin()
-abstract class BsSpacingProps implements UiProps {
+abstract class _$BsSpacingProps implements UiProps {
   @override
   Map get props;
 

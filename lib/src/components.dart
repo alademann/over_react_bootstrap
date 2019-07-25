@@ -17,3 +17,4 @@ part 'package:over_react_bootstrap/src/components/progress_bar.dart';
 part 'package:over_react_bootstrap/src/components/badge.dart';
 part 'package:over_react_bootstrap/src/components/toggle_button_group.dart';
 part 'package:over_react_bootstrap/src/components/toggle_button.dart';
+part 'components.over_react.g.dart';

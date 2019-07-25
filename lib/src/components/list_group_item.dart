@@ -5,10 +5,10 @@ part of over_react_bootstrap.components;
 ///
 /// > See: <https://getbootstrap.com/docs/4.0/components/list-group/>
 @Factory()
-UiFactory<ListGroupItemProps> ListGroupItem;
+UiFactory<ListGroupItemProps> ListGroupItem = _$ListGroupItem;
 
 @Props()
-class ListGroupItemProps extends UiProps with ActionItemProps {
+class _$ListGroupItemProps extends UiProps with ActionItemProps {
   /// The HTML element type for the [ListGroupItem], specifying its DOM representation when rendered.
   ///
   /// Will only be used if [href] and [onClick] are both `null`.

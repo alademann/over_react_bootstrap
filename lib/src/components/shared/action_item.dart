@@ -5,7 +5,7 @@ part of over_react_bootstrap.components;
 /// The component class that utilizes the props class that this gets mixed into should mix in the
 /// [ActionItemUtils] class.
 @PropsMixin()
-abstract class ActionItemProps implements UiProps {
+abstract class _$ActionItemProps implements UiProps {
   @override
   Map get props;
 

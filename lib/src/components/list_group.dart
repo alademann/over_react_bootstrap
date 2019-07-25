@@ -5,10 +5,10 @@ part of over_react_bootstrap.components;
 ///
 /// > See: <https://getbootstrap.com/docs/4.0/components/list-group/>
 @Factory()
-UiFactory<ListGroupProps> ListGroup;
+UiFactory<ListGroupProps> ListGroup = _$ListGroup;
 
 @Props()
-class ListGroupProps extends UiProps with BsSpacingProps {
+class _$ListGroupProps extends UiProps with BsSpacingProps {
   /// The HTML element type for the [ListGroup], specifying its DOM representation when rendered.
   ///
   /// If your list contains clickable [ListGroupItem]s, set this to [ListGroupElementType.DIV].

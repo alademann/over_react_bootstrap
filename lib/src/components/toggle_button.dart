@@ -5,10 +5,10 @@ part of over_react_bootstrap.components;
 ///
 /// > See: <https://getbootstrap.com/docs/4.0/components/buttons/#checkbox-and-radio-buttons>
 @Factory()
-UiFactory<ToggleButtonProps> ToggleButton;
+UiFactory<ToggleButtonProps> ToggleButton = _$ToggleButton;
 
 @Props()
-class ToggleButtonProps extends ButtonProps with AbstractInputPropsMixin {
+class _$ToggleButtonProps extends ButtonProps with AbstractInputPropsMixin {
   /// Whether the `<input>` rendered by the [ToggleButton] should have focus upon mounting.
   ///
   /// _Proxies [DomProps.autoFocus]._
@@ -48,7 +48,7 @@ class ToggleButtonProps extends ButtonProps with AbstractInputPropsMixin {
 }
 
 @State()
-class ToggleButtonState extends ButtonState with AbstractInputStateMixin {
+class _$ToggleButtonState extends ButtonState with AbstractInputStateMixin {
   /// Tracks if the [ToggleButton] is focused. Determines whether to render with the `js-focus` CSS
   /// class.
   ///
@@ -83,9 +83,9 @@ class ToggleButtonComponent extends ButtonComponent<ToggleButtonProps, ToggleBut
 
   @override
   get consumedProps => const [
-    const $Props(ToggleButtonProps),
-    const $Props(ButtonProps),
-    const $Props(AbstractInputPropsMixin),
+    ToggleButtonProps.meta,
+    ButtonProps.meta,
+    AbstractInputPropsMixin.meta,
   ];
 
   @override

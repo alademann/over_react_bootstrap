@@ -5,22 +5,15 @@ homepage: https://github.com/alademann/over_react_bootstrap/
 authors:
   - Aaron Lademann <aaron.lademann@gmail.com>
 environment:
-  sdk: ">=1.24.2"
+  sdk: ^2.4.0
+
 dependencies:
-  bootstrap: ^4.0.0
-  over_react: ^1.20.0
+  over_react: ^2.0.0
+
 dev_dependencies:
-  coverage: ^0.7.2
-  dart_dev: ^1.7.6
+  build_runner: ^1.6.3
+  build_web_compilers: ^2.0.0
+  dart_dev: ^2.1.0
   dependency_validator: ^1.0.0
-  over_react_test: ^1.2.0
-  test: ^0.12.24
-transformers:
-  - bootstrap:
-      url: //maxcdn.bootstrapcdn.com/bootstrap/{{version}}
-      version: 4.0.0
-  - over_react:
-      # Apply workaround for https://github.com/dart-lang/sdk/issues/29914
-      fixDdcAbstractAccessors: true
-  - test/pub_serve:
-      $include: test/**_test{.*,}.dart
+  over_react_test: ^2.0.0
+  test: any

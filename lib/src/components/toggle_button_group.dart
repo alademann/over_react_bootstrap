@@ -19,13 +19,13 @@ part of over_react_bootstrap.components;
 ///
 /// > See: <https://getbootstrap.com/docs/4.0/components/buttons/#checkbox-and-radio-buttons>
 @Factory()
-UiFactory <ToggleButtonGroupProps> ToggleButtonGroup;
+UiFactory <ToggleButtonGroupProps> ToggleButtonGroup = _$ToggleButtonGroup;
 
 @Props()
-class ToggleButtonGroupProps extends ButtonGroupProps with AbstractInputPropsMixin {}
+class _$ToggleButtonGroupProps extends ButtonGroupProps with AbstractInputPropsMixin {}
 
 @State()
-class ToggleButtonGroupState extends ButtonGroupState with AbstractInputStateMixin {}
+class _$ToggleButtonGroupState extends ButtonGroupState with AbstractInputStateMixin {}
 
 @Component(subtypeOf: ButtonGroupComponent)
 class ToggleButtonGroupComponent extends ButtonGroupComponent<ToggleButtonGroupProps, ToggleButtonGroupState> {
@@ -53,7 +53,7 @@ class ToggleButtonGroupComponent extends ButtonGroupComponent<ToggleButtonGroupP
 
   @override
   get consumedProps => const [
-    const $Props(ToggleButtonGroupProps),
+    ToggleButtonGroupProps.meta,
   ];
 
   /// The props that should be added when we clone the given [child] using
